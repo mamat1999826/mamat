@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>个人简历</title>
+        <script>
+            // 获取当前 url 地址
+            var urlstr = window.location.href;
+            // 通过正则将url的 & 替换为 %26
+            var urlres = urlstr.replace(/&/g,"%26");
+            // 获取图片id
+            var ewmimg = document.getElementById("ewmimg");
+            // 生成二维码图片路径
+            ewmimg.src= 'http://qr.topscan.com/api.php?bg=ffffff&fg=333333&text=' + urlres + '&logo=http://iqzhan.com/zb_users/theme//tx_resource/include/logo.png'
+        </script>
+        <style>
+            .bodys{
+                margin: 0;
+                padding: 0;
+                background-image: url('https://ts1.cn.mm.bing.net/th/id/R-C.f4dda9e43ea3da2ae6b19c7c575f2e1c?rik=zRZiuF%2btUMVrIA&riu=http%3a%2f%2fpic.bizhi360.com%2fbbpic%2f81%2f8381.jpg&ehk=byvTF1l%2fvXEyqoFs5%2fiVszBKiG4eJxtCFAg%2fKGKB3no%3d&risl=&pid=ImgRaw&r=0');
+            }
+            .head{
+                text-align: center;
+                font-size: 30px;
+                color: aqua;
+            }
+            .content{
+                margin-left: 17%;
+                width: 1000px;
+                border-radius: 20px;
+                height: 100%;
+                background-color: white;
+                padding-top: 0;
+                margin-top: 0;
+            }
+            .bottons{
+                margin-left: 40%;
+                margin-top: 20px; 
+                width: 150px;
+                height: 50px;
+                border-radius: 30px;
+                border: none;
+                background-color: aqua;
+            }
+        </style>
+    </head>
+    <body class="bodys">
+        <div class="content">
+            <div class="head">
+                个人简历
+            </div>
+            <div style="font-size: 20px; text-align: center;margin-top: 10px;">
+                手机号：13196800521
+                邮箱:1549914122@qq.com
+                <br>
+                地址：新疆伊宁市达达木图镇新路村
+                出生日期：1999-08
+                <br>
+                姓名：买买提江
+                性别：男      
+                身高：167
+                <br>      
+                体重：63
+            </div>
+            <div style="color: brown;font-size: 24px;margin-left: 15px;">教育经历</div>
+            <div style="font-size: 20px;margin-left: 15px;margin-right: 15px;">
+                <strong>东华大学</strong> – 软件工程 本科 计算机科学与技术学院         2020.09 – 至今
+                <br><strong>主修课程：</strong> C语言、 C++、Java语言、数据结构（C语言）、数据库系统原理、操作系统原理、数据结构课程设计、数 据库应用课程设计、 WEB技术与XML技术等课程。
+                <br><strong>编程技能：</strong>熟悉html ，css ，JavaScript ，vue框架 ，springboot ，Java,c/c++。
+            </div>
+            <div style="margin-top: 20px;color: brown;font-size: 24px;margin-left: 15px;">项目经历</div>
+            <div style="font-size: 20px;margin-left: 15px;margin-right: 15px;">
+                <strong>科研项目管理系统</strong> – 负责人
+                <br>
+                使用的技术：前端使用了Vue，后端使用SpringBoot+MyBatis框架，数据库使用Mysql。
+                <br>
+                实现的功能：系统分三个模块分别是申请单位模块，审核单位模块和管理员模块。  申请单位申请项目后，科研
+                单位对该项目进行审核。管理员可以对其他两个模块进行管理。
+                <br><strong>图书管理系统</strong> – 负责人
+                <br>使用的技术：前端使用了Vue，后端使用SpringBoot+MyBatis框架，数据库使用Mysql。
+                <br>实现的功能：有用户页面和管理员页面两部分，用户只能进入用户页面操作，管理员可以管理用户。主要的功 能有，书籍搜索，书籍添加，书籍删除， 用户添加，和用户删除等。
+            </div>
+            <div style="margin-top: 20px;color: brown;font-size: 24px;margin-left: 15px;">社团和组织经历</div>
+            <div style="font-size: 20px;margin-left: 15px;margin-right: 15px;">
+                <strong>东华大学图书馆学生管理团队（爱书小蜜蜂服务队）</strong>  - 部长
+                <br>1、负责图书馆书籍管理团队每日工作的正常运作；
+                <br>2、管理图书馆多媒体阅览室电子设备的借阅和使用；
+                <br>3、制定图书馆管理团队的规章制度、奖惩制度；
+                <br>4、核算队员每月勤工助学酬金，评选出团队每月之星等优秀队员。
+                <br><strong>计算机类2103班</strong> - 学习委员
+                <br>1、负责定期召开班会、班级团建等活动；
+                <br>2、大一期间组织班级同学参加晚自习；
+                <br>3、组织班级同学前往红色景点进行班级团日活动。
+            </div>
+            <div style="margin-top: 20px;color: brown;font-size: 24px;margin-left: 15px;">技能/证书及其他</div>
+            <div style="font-size: 20px;margin-left: 15px;margin-right: 15px;padding-bottom: 30px;">
+                <strong>办公技能：</strong> Excel ，Word ， PowerPoint ，Office 
+                <br><strong>证书：</strong>  英语（CET-4）
+                <br><strong>语言技能：</strong> 熟悉英语， 汉语，维吾尔语
+                <br><strong>兴趣爱好：</strong> 健身、听音乐、看电影、旅游、读书
+            </div>
+            <div style="text-align: center;padding-bottom: 20px;">
+                感谢您的观看
+            </div>
+        </div>
+    </body>
+</html>
